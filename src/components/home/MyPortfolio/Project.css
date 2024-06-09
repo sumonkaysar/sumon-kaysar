@@ -1,0 +1,16 @@
+.project:hover img {
+    transform: scale(1.3);
+}
+
+.project:hover .card-body {
+    background: #a723ff;
+}
+
+.project:hover p {
+    color: #fff;
+}
+
+.project:hover a {
+    background: #fff;
+    color: #000;
+}

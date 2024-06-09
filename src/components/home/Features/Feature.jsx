@@ -1,5 +1,6 @@
 import Icon from "./Icon";
 import "./Feature.css";
+import { Link } from "react-router-dom";
 
 const Feature = ({skill}) => {
   const {title, details, icon } = skill;
@@ -10,10 +11,10 @@ const Feature = ({skill}) => {
         <Icon
           icon={icon}
         />
-        <h2 className="card-title text-2xl">{title}</h2>
-        <p>{details.length > 70 ? details.slice(0, 99) + "..." : details}</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <h2 className="card-title text-2xl mt-3">{title}</h2>
+        <p className="text-[#888]">{details.length > 70 ? details.slice(0, 99) + "..." : details}</p>
+        <div className="card-actions">
+          <Link to="" className="btn bg-[#ff3c00] text-white mt-4 rounded-none border-0">See Details</Link>
         </div>
       </div>
     </div>

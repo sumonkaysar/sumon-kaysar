@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'poppins': ['Poppins', 'sans-serif'],
+      'serif': ['Rubik', 'sans-serif'],
+    }
   },
   plugins: [require("daisyui")],
 }

@@ -11,6 +11,8 @@ const Header = () => {
 
   const menuItems = <>
     <li><Link to="/">Home</Link></li>
+    <li><Link to="/skills">Skills</Link></li>
+    <li><Link to="/projects">Projects</Link></li>
     <li>
       <label className="swap swap-rotate justify-start">
         <input type="checkbox" onClick={handleTheme} />
@@ -21,10 +23,10 @@ const Header = () => {
   </>;
 
   return (
-    <div className="w-full bg-white dark:bg-black fixed shadow z-50">
-      <div className="w-[95%] max-w-[1500px] mx-auto navbar">
+    <div className="w-full bg-white dark:bg-[#080b1b] fixed shadow z-50 border-b border-[#ff3c00]">
+      <div className="w-[90%] max-w-[1440px] mx-auto navbar">
         <div className="navbar-start">
-          <a className="btn btn-ghost normal-case text-xl">SK</a>
+          <Link to="/" className="text-[#ff3c00] font-bold normal-case text-[32px] font-poppins">SK</Link>
         </div>
         <div className="navbar-end">
           <div className="dropdown">
@@ -37,7 +39,7 @@ const Header = () => {
               }
             </ul>
           </div>
-          <ul className="menu hidden lg:flex menu-horizontal px-1">
+          <ul className="menu hidden lg:flex menu-horizontal px-1 text-white text-[16px]">
             {
               menuItems
             }

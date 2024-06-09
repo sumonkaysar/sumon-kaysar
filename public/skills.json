@@ -1,30 +1,110 @@
 [
   {
-    "_id": 1,
-    "title": "HTML5",
+    "title": "Tailwind CSS",
     "icon": {
-      "name": "FaHtml5",
-      "color": "#ff3c00"
+      "name": "RiTailwindCssFill",
+      "color": "#38BDF8"
     },
-    "details": "The term HTML5 is essentially a buzzword that refers to a set of modern web technologies. This includes the HTML Living Standard, along with JavaScript APIs to enhance storage, multimedia, and hardware access. You may sometimes hear about 'new HTML5 elements', or find HTML5 described as a new version of HTML. HTML5 was the successor to previous HTML versions and introduced new elements and capabilities to the language on top of the previous version, HTML 4.01, as well as improving or removing some existing functionality. However, as a Living Standard HTML now has no version."
+    "details": "Tailwind CSS enables me to build custom, responsive designs quickly and efficiently. I utilize its utility-first approach to create highly maintainable and scalable stylesheets, ensuring consistency and performance. Tailwind's flexibility allows me to craft unique and modern designs without writing extensive custom CSS, speeding up the development process and ensuring a clean and organized codebase.",
+    "tags": ["frontend", "design"]
   },
   {
-    "_id": 2,
-    "title": "CSS3",
+    "title": "Redux",
     "icon": {
-      "name": "FaCss3Alt",
-      "color": "#0f68ff"
+      "name": "SiRedux",
+      "color": "#774ABB"
     },
-    "details": "CSS stands for Cascading Style Sheets. CSS is a standard style sheet language used for describing the presentation (i.e. the layout and formatting) of the web pages. Prior to CSS, nearly all of the presentational attributes of HTML documents were contained within the HTML markup (specifically inside the HTML tags); all the font colors, background styles, element alignments, borders and sizes had to be explicitly described within the HTML. As a result, development of the large websites became a long and expensive process, since the style information were repeatedly added to every single page of the website. To solve this problem CSS was introduced in 1996 by the World Wide Web Consortium (W3C), which also maintains its standard. CSS was designed to enable the separation of presentation and content. Now web designers can move the formatting information of the web pages to a separate style sheet which results in considerably simpler HTML markup, and better maintainability. CSS3 is the latest version of the CSS specification. CSS3 adds several new styling features and improvements to enhance the web presentation capabilities."
+    "details": "Managing application state is crucial for complex applications, and my expertise in Redux allows me to do this efficiently. I implement Redux for predictable state management, ensuring data consistency and ease of debugging. My skills include setting up Redux store, defining actions and reducers, and using middleware like Redux Thunk or Redux Saga to handle asynchronous operations. This results in a more maintainable and scalable codebase. I also focus on integrating Redux DevTools for better state inspection and debugging capabilities, ensuring that the development process remains smooth and efficient.",
+    "tags": ["frontend", "statemanagement"]
   },
   {
-    "_id": 3,
-    "title": "Javascript",
+    "title": "Node.js",
     "icon": {
-      "name": "SiJavascript",
-      "bgColor": "bg-black",
-      "color": "yellow"
+      "name": "FaNodeJs",
+      "color": "#23B45D"
     },
-    "details": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via eval), object introspection (via for...in and Object utilities), and source-code recovery (JavaScript functions store their source text and can be retrieved through toString())."
+    "details": "Node.js empowers me to build fast and scalable server-side applications using JavaScript. My experience includes developing RESTful APIs, working with asynchronous programming, and leveraging event-driven architecture to handle multiple client requests efficiently. I utilize Node.js to create high-performance server environments, capable of supporting real-time applications and microservices. My skills also include working with frameworks like Express.js to build robust server-side logic, ensuring that applications are secure and scalable.",
+    "tags": ["backend", "mern"]
+  },
+  {
+    "title": "Express.js",
+    "icon": {
+      "name": "IoLogoJavascript",
+      "color": "#F7DF1E"
+    },
+    "details": "Node.js empowers me to build fast and scalable server-side applications using JavaScript. My experience includes developing RESTful APIs, working with asynchronous programming, and leveraging event-driven architecture to handle multiple client requests efficiently. I utilize Node.js to create high-performance server environments, capable of supporting real-time applications and microservices. My skills also include working with frameworks like Express.js to build robust server-side logic, ensuring that applications are secure and scalable.",
+    "tags": ["backend", "mern", "js", "framework"]
+  },
+  {
+    "title": "MongoDB",
+    "icon": {
+      "name": "SiMongodb",
+      "color": "#086346"
+    },
+    "details": "MongoDB is my preferred database for storing and managing data in a flexible, scalable manner. My expertise includes designing schemas that leverage MongoDB's document-oriented nature, ensuring efficient data retrieval and storage. I use Mongoose for schema validation and object modeling, allowing seamless integration with Node.js applications. I am proficient in performing CRUD operations, indexing for performance optimization, and using MongoDB's aggregation framework for complex data analysis. Additionally, I implement data security measures and backup strategies to ensure the integrity and availability of data.",
+    "tags": ["database", "mern", "nosql"]
+  },
+  {
+    "title": "MySQL",
+    "icon": {
+      "name": "GrMysql",
+      "color": "#2F68A2"
+    },
+    "details": "Proficient in MySQL, I design and manage relational databases for web applications. My expertise includes schema design, indexing, querying, and optimizing database performance. I utilize SQL for data manipulation, ensuring efficient storage and retrieval of information. Additionally, I integrate MySQL with server-side technologies like PHP and Node.js, allowing seamless interaction between the database and application logic. I also implement security measures to protect sensitive data and ensure compliance with industry standards. My proficiency in MySQL enables me to build robust, scalable, and secure database solutions to support various web projects.",
+    "tags": ["database", "sql", "phpstack"]
+  },
+  {
+    "title": "Bootstrap",
+    "icon": {
+      "name": "FaBootstrap",
+      "color": "#880AFB"
+    },
+    "details": "Bootstrap is my go-to framework for rapid front-end development. Its responsive grid system, pre-designed components, and utility classes enable me to create visually appealing and mobile-first web pages quickly. I leverage Bootstrap to ensure design consistency and improve development speed, allowing me to focus on customizing the user experience while maintaining a solid foundation.",
+    "tags": ["frontend", "design", "phpstack"]
+  },
+  {
+    "title": "PHP",
+    "icon": {
+      "name": "FaPhp",
+      "color": "#556096"
+    },
+    "details": "PHP is a key part of my back-end development skill set. I use PHP to create dynamic, server-side applications, including RESTful APIs and content management systems. My experience includes working with PHP frameworks like Laravel and CodeIgniter to build robust and scalable web applications. I am proficient in integrating PHP with various databases, handling form submissions, and implementing security best practices to ensure data integrity and application reliability.",
+    "tags": ["backend", "phpstack"]
+  },
+  {
+    "title": "Git",
+    "icon": {
+      "name": "FaGitAlt",
+      "color": "#F05539"
+    },
+    "details": "Proficient in Git version control, I use it to manage and track changes in my codebase efficiently. With Git, I maintain a detailed history of project modifications, collaborate with team members seamlessly, and manage different branches for feature development and bug fixes. I ensure code integrity by following best practices such as committing atomic changes, writing descriptive commit messages, and resolving merge conflicts effectively.",
+    "tags": ["tools", "versioncontrol"]
+  },
+  {
+    "title": "GitHub",
+    "icon": {
+      "name": "FaGithub",
+      "color": "FaGithub"
+    },
+    "details": "With GitHub, I utilize its platform for hosting repositories, collaborating with other developers, and contributing to open-source projects. I leverage GitHub's pull request workflow for code review and collaboration, creating issues and managing project milestones to track progress. Additionally, I use GitHub Pages for hosting static websites, ensuring a seamless integration between version control and deployment.",
+    "tags": ["tools", "versioncontrol", "codestorage"]
+  },
+  {
+    "title": "DaisyUI",
+    "icon": {
+      "name": "FaGitAlt",
+      "color": "#F05539"
+    },
+    "details": "Proficient in using DaisyUI, I leverage this Tailwind CSS component library to expedite front-end development. With DaisyUI, I enhance UI design by incorporating ready-to-use components and utility classes, streamlining the creation of responsive layouts and interfaces. By utilizing DaisyUI's extensive component library and customization options, I ensure efficient and consistent design implementation across web applications.",
+    "tags": ["mern", "design", "frontend"]
+  },
+  {
+    "title": "DaisyUI",
+    "icon": {
+      "name": "SiDaisyui",
+      "color": "#21D2A8"
+    },
+    "details": "Proficient in using DaisyUI, I leverage this Tailwind CSS component library to expedite front-end development. With DaisyUI, I enhance UI design by incorporating ready-to-use components and utility classes, streamlining the creation of responsive layouts and interfaces. By utilizing DaisyUI's extensive component library and customization options, I ensure efficient and consistent design implementation across web applications.",
+    "tags": ["mern", "design", "frontend"]
   }
 ]
