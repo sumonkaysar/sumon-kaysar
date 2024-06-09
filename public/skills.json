@@ -1,0 +1,30 @@
+[
+  {
+    "_id": 1,
+    "title": "HTML5",
+    "icon": {
+      "name": "FaHtml5",
+      "color": "#ff3c00"
+    },
+    "details": "The term HTML5 is essentially a buzzword that refers to a set of modern web technologies. This includes the HTML Living Standard, along with JavaScript APIs to enhance storage, multimedia, and hardware access. You may sometimes hear about 'new HTML5 elements', or find HTML5 described as a new version of HTML. HTML5 was the successor to previous HTML versions and introduced new elements and capabilities to the language on top of the previous version, HTML 4.01, as well as improving or removing some existing functionality. However, as a Living Standard HTML now has no version."
+  },
+  {
+    "_id": 2,
+    "title": "CSS3",
+    "icon": {
+      "name": "FaCss3Alt",
+      "color": "#0f68ff"
+    },
+    "details": "CSS stands for Cascading Style Sheets. CSS is a standard style sheet language used for describing the presentation (i.e. the layout and formatting) of the web pages. Prior to CSS, nearly all of the presentational attributes of HTML documents were contained within the HTML markup (specifically inside the HTML tags); all the font colors, background styles, element alignments, borders and sizes had to be explicitly described within the HTML. As a result, development of the large websites became a long and expensive process, since the style information were repeatedly added to every single page of the website. To solve this problem CSS was introduced in 1996 by the World Wide Web Consortium (W3C), which also maintains its standard. CSS was designed to enable the separation of presentation and content. Now web designers can move the formatting information of the web pages to a separate style sheet which results in considerably simpler HTML markup, and better maintainability. CSS3 is the latest version of the CSS specification. CSS3 adds several new styling features and improvements to enhance the web presentation capabilities."
+  },
+  {
+    "_id": 3,
+    "title": "Javascript",
+    "icon": {
+      "name": "SiJavascript",
+      "bgColor": "bg-black",
+      "color": "yellow"
+    },
+    "details": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via eval), object introspection (via for...in and Object utilities), and source-code recovery (JavaScript functions store their source text and can be retrieved through toString())."
+  }
+]
