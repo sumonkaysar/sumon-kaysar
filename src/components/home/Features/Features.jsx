@@ -1,8 +1,17 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Feature from "./Feature";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { server } from "../../../../links";
 
 const Features = () => {
-  const skills = useLoaderData();
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    axios.get(`${server}/skills/mern`)
+      .then(({ data }) => setSkills(data))
+      .catch(err => console.error(err))
+  }, []);
 
   return (
     <div className="bg-[#ECF0F3] dark:bg-slate-900 py-10">
@@ -10,7 +19,7 @@ const Features = () => {
         <div className="mx-5">
           <p className="uppercase mb-3 text-[#ff3c00] text-center sm:text-left">Professional Skills</p>
           <h1 className="text-3xl sm:text-5xl text-center sm:text-left font-bold mb-8 text-white">My Expertise</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-7 xl:gap-10 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 lg:gap-7 xl:gap-10 mb-10">
             {
               skills.map(skill => <Feature
                 key={skill._id}
@@ -19,7 +28,7 @@ const Features = () => {
             }
           </div>
           <div className="text-center pt-10">
-            <Link to="/skills" className="btn bg-[#ff3c00] text-white rounded-none border-0 px-12">See More</Link>
+            <Link to="/skills" className="btn bg-[#ff3c00] text-white hover:bg-white hover:text-[#ff3c00] rounded-none border-0 px-12">See More</Link>
           </div>
         </div>
       </div>

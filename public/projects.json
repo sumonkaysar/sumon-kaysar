@@ -1,6 +1,5 @@
 [
     {
-      "_id": 1,
       "title": "Perform Tracker (Team Work)",
       "img": ["https://i.ibb.co/8bxdXyH/Home-Perform-Tracker.jpg"],
       "type": "Team",
@@ -8,7 +7,6 @@
       "details": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est debitis, asperiores, sit architecto reiciendis rem at quasi dolorum mollitia pariatur nisi rerum sunt obcaecati. Ducimus esse, molestias dolorum, explicabo repudiandae praesentium tenetur sequi accusamus, eum et quibusdam possimus nihil quo ea iusto totam asperiores fugit ullam illo! Nihil natus repellat voluptatibus, esse exercitationem, magnam quo tempore accusantium, placeat similique doloribus."
     },
     {
-      "_id": 2,
       "title": "Used Cars Mart",
       "img": ["https://i.ibb.co/FHcvTSV/Used-Cars-Mart.png"],
       "type": "Individual",
@@ -16,7 +14,6 @@
       "details": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est debitis, asperiores, sit architecto reiciendis rem at quasi dolorum mollitia pariatur nisi rerum sunt obcaecati. Ducimus esse, molestias dolorum, explicabo repudiandae praesentium tenetur sequi accusamus, eum et quibusdam possimus nihil quo ea iusto totam asperiores fugit ullam illo! Nihil natus repellat voluptatibus, esse exercitationem, magnam quo tempore accusantium, placeat similique doloribus."
     },
     {
-      "_id": 3,
       "title": "Learning Frontend Development",
       "img": ["https://i.ibb.co/c2x4xF9/Learning-Frontend-Development-1.png"],
       "type": "Individual",

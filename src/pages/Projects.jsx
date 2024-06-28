@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import Project from "../components/home/MyPortfolio/Project";
+import { server } from "../../links";
+import axios from "axios";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+
     useEffect(() => {
-      fetch("projects.json")
-        .then(res => res.json())
-        .then(data => setProjects(data))
+        axios.get(`${server}/projects`)
+            .then(({ data }) => setProjects(data))
     }, []);
 
     return (

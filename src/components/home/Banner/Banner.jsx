@@ -5,8 +5,8 @@ import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa
 const Banner = () => {
 
   return (
-    <div className="banner flex items-center dark:bg-slate-950 text-white">
-      <div className="w-[95%] max-w-[1500px] mx-auto px-7 py-16 lg:flex justify-between items-center gap-5 lg:gap-10">
+    <div className="banner flex items-center bg-white dark:bg-slate-950 text-white">
+      <div className="w-[95%] max-w-[1440px] mx-auto lg:flex justify-between items-center gap-5">
         <div className="w-full text-center sm:text-left">
           <div className='text-[30px] sm:text-[30px] md:text-[40px] font-extrabold uppercase md:leading-10 mb-5'>
             <h1>Hi, I'm <span className='text-[#ff3c00]'>Sumon Kaysar</span></h1>
@@ -26,21 +26,21 @@ const Banner = () => {
             <span>FullStack</span>
           </div>
           <div className='flex justify-center sm:justify-start gap-3 mb-10'>
-            <a href="https://www.facebook.com/sumon.kaysar.sk" className='border-[#ff3c00] text-[#ff3c00] border-2 inline-block rounded-full p-2 text-lg' target='_blank'>
+            <a href="https://www.facebook.com/sumon.kaysar.sk" className='border-[#ff3c00] text-[#ff3c00] hover:bg-[#ff3c00] hover:text-white transition-all border-2 inline-block rounded-full p-2 text-lg' target='_blank'>
               <FaFacebookF />
             </a>
-            <a href="https://github.com/sumonkaysar" className='border-[#ff3c00] text-[#ff3c00] border-2 inline-block rounded-full p-2 text-lg' target='_blank'>
+            <a href="https://github.com/sumonkaysar" className='border-[#ff3c00] text-[#ff3c00] hover:bg-[#ff3c00] hover:text-white transition-all border-2 inline-block rounded-full p-2 text-lg' target='_blank'>
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/sumonkaysar" className='border-[#ff3c00] text-[#ff3c00] border-2 inline-block rounded-full p-2 text-lg' target='_blank'>
+            <a href="https://linkedin.com/in/sumonkaysar" className='border-[#ff3c00] text-[#ff3c00] hover:bg-[#ff3c00] hover:text-white transition-all border-2 inline-block rounded-full p-2 text-lg' target='_blank'>
               <FaLinkedinIn />
             </a>
-            <a href="https://www.instagram.com/sumon.kaysar.sk" className='border-[#ff3c00] text-[#ff3c00] border-2 inline-block rounded-full p-2 text-lg' target='_blank'>
+            <a href="https://www.instagram.com/sumon.kaysar.sk" className='border-[#ff3c00] text-[#ff3c00] hover:bg-[#ff3c00] hover:text-white transition-all border-2 inline-block rounded-full p-2 text-lg' target='_blank'>
               <FaInstagram />
             </a>
           </div>
           <div>
-            <a href="sk_resume.pdf" className="btn bg-[#ff3c00] text-white rounded-none" download="sk_resume.pdf">My Resume</a>
+            <a href="sk_resume.pdf" className="btn bg-[#ff3c00] hover:bg-white hover:text-[#ff3c00] text-white rounded-none" download="sk_resume.pdf">My Resume</a>
           </div>
         </div>
         <div className="w-4/5 xl:w-full max-w-sm hidden lg:block">
