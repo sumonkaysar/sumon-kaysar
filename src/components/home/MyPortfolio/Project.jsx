@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Project.css";
 import { PhotoProvider, PhotoView } from "react-photo-view";
+import useTheme from "../../../hooks/useTheme";
 
 const Project = ({ project, i }) => {
     const { title, img, details } = project;
+    const { theme } = useTheme();
 
     return (
-        <div className="card card-compact project bg-gradient-to-br from-[#e2e8ec] to-white dark:from-slate-900 dark:to-slate-800 dark:shadow-[5px_5px_15px_#07122d,_-5px_-5px_15px_#000828] dark:text-white cursor-pointer">
+        <div className={`card card-compact project bg-gradient-to-br cursor-pointer ${theme === 'light' ? "from-[#e2e8ec] to-white shadow-[5px_5px_15px_#e2ebff,_-5px_-5px_15px_#d2d3d2] text-slate-950" : "from-slate-900 to-slate-800 shadow-[5px_5px_15px_#07122d,_-5px_-5px_15px_#000828] text-white"}`}>
             <PhotoProvider>
                 <figure className="h-64 rounded-t-xl overflow-hidden " style={{ "display": "block" }}>
                     <PhotoView key={i} src={img}>

@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import Project from "../components/home/MyPortfolio/Project";
 import { server } from "../../links";
 import axios from "axios";
+import useTheme from "../hooks/useTheme";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const { theme } = useTheme();
 
     useEffect(() => {
         axios.get(`${server}/projects`)
@@ -12,7 +14,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className="bg-[#ECF0F3] dark:bg-[#091229] py-10">
+        <div className={`py-10 ${theme === 'light' ? "" : "bg-[#091229]"}`}>
             <div className="w-[95%] max-w-[1500px] mx-auto py-5 px-5">
                 <div className="mx-5">
                     <h1 className="text-xl sm:text-3xl text-center font-bold mb-12 uppercase text-[#ff3c00]">My All Projects</h1>

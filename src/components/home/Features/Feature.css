@@ -19,10 +19,6 @@
   z-index: -1;
 }
 
-.skill.dark_skill::before{
-  background: linear-gradient(to right bottom, #1be1ff, #41f2ff);
-}
-
 .skill:hover{
   color: white;
 }

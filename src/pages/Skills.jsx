@@ -3,9 +3,11 @@ import Feature from "../components/home/Features/Feature";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { server } from "../../links";
+import useTheme from "../hooks/useTheme";
 
 const Skills = () => {
     const [skills, setSkills] = useState([]);
+    const { theme } = useTheme();
 
     useEffect(() => {
         axios.get(`${server}/skills`)
@@ -14,7 +16,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="bg-[#ECF0F3] dark:bg-slate-900 py-10">
+        <div className={`py-10 ${theme === 'light' ? "" : "bg-[#091229]"}`}>
             <div className="w-[95%] max-w-[1500px] mx-auto py-10 px-5">
                 <div className="mx-5">
                     <h1 className="text-xl sm:text-3xl text-center font-bold mb-12 uppercase text-[#ff3c00]">My All Skills</h1>

@@ -6,6 +6,10 @@
     background: #a723ff;
 }
 
+.project:hover h2 {
+    color: #fff;
+}
+
 .project:hover p {
     color: #fff;
 }

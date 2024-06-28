@@ -1,12 +1,14 @@
 import sk from '../../../assets/images/sk.png';
 import star from '../../../assets/icons/star.png';
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import useTheme from '../../../hooks/useTheme';
 
 const Banner = () => {
+  const { theme } = useTheme();
 
   return (
-    <div className="banner flex items-center bg-white dark:bg-slate-950 text-white">
-      <div className="w-[95%] max-w-[1440px] mx-auto lg:flex justify-between items-center gap-5">
+    <div className={`banner flex items-center ${ theme === 'light' ? "bg-green-100 text-slate-950" :"bg-slate-950 text-white"}`}>
+      <div className="w-[95%] max-w-[1440px] mx-auto flex flex-col-reverse lg:flex-row justify-between items-center gap-5 py-10 sm:py-0">
         <div className="w-full text-center sm:text-left">
           <div className='text-[30px] sm:text-[30px] md:text-[40px] font-extrabold uppercase md:leading-10 mb-5'>
             <h1>Hi, I'm <span className='text-[#ff3c00]'>Sumon Kaysar</span></h1>
@@ -40,10 +42,10 @@ const Banner = () => {
             </a>
           </div>
           <div>
-            <a href="sk_resume.pdf" className="btn bg-[#ff3c00] hover:bg-white hover:text-[#ff3c00] text-white rounded-none" download="sk_resume.pdf">My Resume</a>
+            <a href="sk_resume.pdf" className={`btn bg-[#ff3c00] hover:text-[#ff3c00] text-white rounded-none border-0 ${theme === 'light' ? "hover:bg-slate-950":"hover:bg-white"}`} download="sk_resume.pdf">My Resume</a>
           </div>
         </div>
-        <div className="w-4/5 xl:w-full max-w-sm hidden lg:block">
+        <div className="w-4/5 xl:w-full max-w-sm sm:hidden lg:block mx-auto">
           <div className="mask mask-circle bg-[#006ac1] dark:bg-[#006ac1] text-center">
             <img className='w-3/5 mx-auto' src={sk} />
           </div>
