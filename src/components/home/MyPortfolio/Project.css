@@ -18,3 +18,8 @@
     background: #fff;
     color: #ff3c00;
 }
+
+.project .swiper{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

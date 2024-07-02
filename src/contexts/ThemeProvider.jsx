@@ -5,9 +5,10 @@ export const ThemeContext = createContext();
 const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState("dark");
 
-    console.log(theme);
-
-    // const changeTheme = newTheme => setTheme(newTheme)
+    // const changeTheme = newTheme => {
+    //     setTheme(newTheme)
+    //     localStorage.setItem("sk-theme", newTheme)
+    // }
     const changeTheme = () => setTheme(prevTheme => {
         localStorage.setItem("sk-theme", prevTheme === "light" ? "dark" : "light")
         return prevTheme === "light" ? "dark" : "light"

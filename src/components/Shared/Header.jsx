@@ -3,19 +3,25 @@ import { FaBars } from "react-icons/fa";
 import { BsMoonFill } from "react-icons/bs";
 import { BiSun } from "react-icons/bi";
 import useTheme from "../../hooks/useTheme";
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
   const { theme, changeTheme } = useTheme();
+  const { user } = useAuth();
 
-  const handleTheme = e => changeTheme();
+  const handleTheme = () => changeTheme();
 
   const menuItems = <>
-    <li><NavLink className={({ isActive, isPending }) => `${theme === 'light' ? isActive ? "bg-[#5714ff] text-white" : "hover:bg-[#5714ff] hover:text-white" : isActive ? "bg-[#260280]" : "hover:bg-[#260280]"}`} to="/">Home</NavLink></li>
-    <li><NavLink className={({ isActive, isPending }) => `${theme === 'light' ? isActive ? "bg-[#5714ff] text-white" : "hover:bg-[#5714ff] hover:text-white" : isActive ? "bg-[#260280]" : "hover:bg-[#260280]"}`} to="/skills">Skills</NavLink></li>
-    <li><NavLink className={({ isActive, isPending }) => `${theme === 'light' ? isActive ? "bg-[#5714ff] text-white" : "hover:bg-[#5714ff] hover:text-white" : isActive ? "bg-[#260280]" : "hover:bg-[#260280]"}`} to="/projects">Projects</NavLink></li>
+    <li><NavLink className={({ isActive, isPending }) => `${isActive ? "bg-[#ff3c00] text-white" : "hover:bg-[#ff3c00] hover:text-white"}`} to="/">Home</NavLink></li>
+    {
+      user?.email === import.meta.env.OWNER_EMAIL &&
+      <li><NavLink className={({ isActive, isPending }) => `${isActive ? "bg-[#ff3c00] text-white" : "hover:bg-[#ff3c00] hover:text-white"}`} to="/sk/dashboard">Dashboard</NavLink></li>
+    }
+    <li><NavLink className={({ isActive, isPending }) => `${isActive ? "bg-[#ff3c00] text-white" : "hover:bg-[#ff3c00] hover:text-white"}`} to="/skills">Skills</NavLink></li>
+    <li><NavLink className={({ isActive, isPending }) => `${isActive ? "bg-[#ff3c00] text-white" : "hover:bg-[#ff3c00] hover:text-white"}`} to="/projects">Projects</NavLink></li>
     <li>
-      <label className={`swap swap-rotate justify-start ${theme === 'light' ? "hover:bg-[#5714ff] hover:text-white" : "hover:bg-[#260280]"}`}>
-        <input type="checkbox" checked={theme === 'light'} onClick={handleTheme} />
+      <label className={"swap swap-rotate justify-start hover:bg-[#ff3c00] hover:text-white"}>
+        <input type="checkbox" checked={theme === 'light'} onChange={handleTheme} />
         <BsMoonFill className="swap-off text-xl" />
         <BiSun className="swap-on text-xl" />
       </label>
@@ -24,7 +30,7 @@ const Header = () => {
 
   return (
     <div className={`w-full fixed shadow z-50 border-b border-[#ff3c00] ${theme === 'light' ? "bg-green-100" : "dark:bg-[#080b1b]"}`}>
-      <div className="w-[90%] max-w-[1440px] mx-auto navbar">
+      <div className="navbar w-[90%] max-w-[1440px] mx-auto px-0">
         <div className="navbar-start">
           <Link to="/" className="text-[#ff3c00] font-bold normal-case text-[32px] font-poppins">SK</Link>
         </div>
